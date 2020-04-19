@@ -1,0 +1,29 @@
+(Exported by FreeCAD)
+(Post Processor: linuxcnc_post)
+(Output Time:2020-04-12 16:05:03.378769)
+(begin preamble)
+G17 G54 G40 G49 G80 G90
+G20
+(begin operation: T2: Drill 3/8")
+(machine: not set, in/min)
+(T2: Drill 3/8")
+M6 T2
+M3 S600
+(finish operation: T2: Drill 3/8")
+(begin operation: Drilling)
+(machine: not set, in/min)
+(Drilling)
+(Begin Drilling)
+G0 Z0.2000
+G90
+G98
+G83 X0.6500 Y0.9443 Z-0.5012 F2.0000 Q0.1000 R0.3900
+G83 X1.4000 Y0.9443 Z-0.5012 F2.0000 Q0.1000 R0.3900
+G83 X2.1500 Y0.9443 Z-0.5012 F2.0000 Q0.1000 R0.3900
+G80
+G0 Z0.2000
+(finish operation: Drilling)
+(begin postamble)
+M05
+G17 G54 G90 G80 G40
+M2
